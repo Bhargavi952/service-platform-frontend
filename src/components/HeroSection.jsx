@@ -7,7 +7,7 @@ const HeroSection = ({ onOpenModal }) => {
       <div className="max-w-4xl mx-auto text-center">
         <h1 className="text-4xl font-bold mb-4">ZETAONE</h1>
         <p className="text-lg mb-8">
-          Your One-Stop Solution for All Service Needs – Anytime, Anywhere!
+          Your One-Stop Solution for All Service Needs Anytime, Anywhere!
         </p>
         <div className="flex justify-center">
           <input
