@@ -1,10 +1,13 @@
 import React from "react";
 import CategoriesGrid from "../components/CategoriesGrid";
 
-const Services = () => {
+const Services = ({ onOpenModal, setSelectedService }) => {
   return (
     <div>
-      <CategoriesGrid />
+      <CategoriesGrid
+        onOpenModal={onOpenModal}
+        setSelectedService={setSelectedService}
+      />
     </div>
   );
 };

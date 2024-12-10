@@ -1,12 +1,17 @@
 import React from "react";
-import HeroSection from "../components/HeroSection";
+import Bookings from "../components/Bookings";
 import CategoriesGrid from "../components/CategoriesGrid";
+import HeroSection from "../components/HeroSection";
 
-const Home = () => {
+const Home = ({ onOpenModal, setBookings, bookings, setSelectedService }) => {
   return (
     <div>
       <HeroSection />
-      <CategoriesGrid />
+      <Bookings setBookings={setBookings} bookings={bookings} />
+      <CategoriesGrid
+        onOpenModal={onOpenModal}
+        setSelectedService={setSelectedService}
+      />
     </div>
   );
 };

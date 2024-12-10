@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const HeroSection = () => {
+const HeroSection = ({ onOpenModal }) => {
   return (
     <div className="bg-gradient-to-r from-blue-500 to-blue-700 text-white py-16 px-8">
       <div className="max-w-4xl mx-auto text-center">
@@ -13,7 +13,7 @@ const HeroSection = () => {
           <input
             type="text"
             placeholder="Search for a service..."
-            className="p-3 rounded-l-lg w-2/3 border-none focus:ring-2 focus:ring-blue-300"
+            className="p-3 text-gray-950 peer-placeholder-shown:text-neutral-700 rounded-l-lg w-2/3 border-none"
           />
           <Link to="/services">
             <button className="bg-yellow-500 hover:bg-yellow-600 text-white px-4 py-3 rounded-r-lg">
